@@ -123,8 +123,7 @@ def SearchMetadataObj():
     myFlows = getWorkflows(session_id, server_url)
     print('[SearchMetadataObj]capturou objetos:', datetime.datetime, ' timezone: ', datetime.timezone)
 
-    #caminhoAbsoluto = '/infacloud/projetos/bu/coe/monitor/'
-    caminhoAbsoluto = 'C:/Temp/' #'/infacloud/projetos/bu/coe/monitor/'
+    caminhoAbsoluto = 'C:/Temp/' #'/projetos/bu/coe/monitor/'
     arquivoOutput = caminhoAbsoluto + 'IICS_All_Objs.csv'
     myFile, spamwriter = criarArquivo(caminhoAbsoluto, arquivoOutput)
     spamwriter.writerow(
